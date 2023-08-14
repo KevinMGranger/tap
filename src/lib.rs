@@ -134,12 +134,13 @@ implementation, and does nothing else.
 
 pub mod conv;
 pub mod pipe;
+pub mod reffed;
 pub mod tap;
 
 /// Reëxports all traits in one place, for easy import.
 pub mod prelude {
 	#[doc(inline)]
-	pub use crate::{conv::*, pipe::*, tap::*};
+	pub use crate::{conv::*, pipe::*, reffed::*, tap::*};
 }
 
 // also make traits available at crate root
